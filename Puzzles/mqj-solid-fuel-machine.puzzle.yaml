@@ -1,0 +1,126 @@
+Name: Solid-Fuel Machine
+ID: mqj-solid-fuel-machine
+Author: 'Merstan, D'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: quintessence
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Quintessence
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: MetalQuintessence:chromium
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Chromium
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: fire
+      Position:
+        Pos: 1,0
+    - AtomType: fire
+      Position:
+        Pos: 1,-1
+    - AtomType: water
+      Position:
+        Pos: -1,1
+    - AtomType: water
+      Position:
+        Pos: -1,0
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds:
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Solid Fuel
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: lead
+      Position:
+        Pos: 0,0
+    - AtomType: tin
+      Position:
+        Pos: 1,0
+    - AtomType: iron
+      Position:
+        Pos: 2,-1
+    - AtomType: quicksilver
+      Position:
+        Pos: 1,-1
+    - AtomType: iron
+      Position:
+        Pos: 1,1
+    - AtomType: fire
+      Position:
+        Pos: 0,1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    Name: Fuel Machinery
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: Duplication, Disposal, CoreTools, BaronWheel
+CustomPermissions:
+- MetalQuintessence:Blossom
+- MetalQuintessence:ChromaDispersionPermission
+- ReductiveMetallurgy:rejection
+Highlights: []
+ProductionInfo: 

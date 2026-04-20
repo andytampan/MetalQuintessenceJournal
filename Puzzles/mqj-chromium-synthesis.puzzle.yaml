@@ -1,0 +1,79 @@
+Name: Chromium Synthesis
+ID: mqj-chromium-snythesis
+Author: 'Airy, H'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: lead
+      Position:
+        Pos: -1,0
+    - AtomType: tin
+      Position:
+        Pos: 0,0
+    - AtomType: iron
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Metallic minus
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: copper
+      Position:
+        Pos: -1,0
+    - AtomType: silver
+      Position:
+        Pos: 0,0
+    - AtomType: gold
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Metallic plus
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: quicksilver
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Quicksilver
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: MetalQuintessence:chromium
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Chromium
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- MetalQuintessence:Pigmentation
+Highlights: []
+ProductionInfo: 

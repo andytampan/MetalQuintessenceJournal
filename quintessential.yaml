@@ -1,0 +1,10 @@
+Name: MetalQuintessenceJournal
+Version: 1.0.0
+Title: Study on Metal Quintessence
+Desc: Journal for the metal quintessence mod
+DLL: MetalQuintessenceJournal\bin\Debug\net452\MetalQuintessenceJournal.dll
+Dependencies:
+- Name: Quintessential
+  Version: 0.2.0
+- Name: Brimstone
+  Version: 2.0.0

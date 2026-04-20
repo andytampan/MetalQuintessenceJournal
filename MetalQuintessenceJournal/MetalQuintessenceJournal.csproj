@@ -1,0 +1,71 @@
+﻿./<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net452</TargetFramework>
+		<Platforms>AnyCPU;x86</Platforms>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<OpusPath>..\..\..</OpusPath>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>10</LangVersion>
+		<AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Brimstone">
+		  <HintPath>..\..\Brimstone_2.0.2\Brimstone.dll</HintPath>
+		</Reference>
+		<Reference Include="Lightning">
+			<HintPath>$(OpusPath)\ModdedLightning.exe</HintPath>
+		</Reference>
+		<Reference Include="MMHOOK_ModdedLightning">
+			<HintPath>$(OpusPath)\MMHOOK_ModdedLightning.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil">
+			<HintPath>$(OpusPath)\Mono.Cecil.dll</HintPath>
+		</Reference>
+		<Reference Include="MonoMod">
+			<HintPath>$(OpusPath)\MonoMod.exe</HintPath>
+		</Reference>
+		<Reference Include="MonoMod.RuntimeDetour">
+			<HintPath>$(OpusPath)\MonoMod.RuntimeDetour.dll</HintPath>
+		</Reference>
+		<Reference Include="MonoMod.RuntimeDetour.HookGen">
+			<HintPath>$(OpusPath)\MonoMod.RuntimeDetour.HookGen.exe</HintPath>
+		</Reference>
+		<Reference Include="MonoMod.Utils">
+			<HintPath>$(OpusPath)\MonoMod.Utils.dll</HintPath>
+		</Reference>
+		<Reference Include="YamlDotNet">
+			<HintPath>$(OpusPath)\YamlDotNet.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Update="System">
+			<CopyLocal>False</CopyLocal>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Update="System.Core">
+			<CopyLocal>False</CopyLocal>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Update="System.Data">
+			<CopyLocal>False</CopyLocal>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Update="System.Drawing">
+			<CopyLocal>False</CopyLocal>
+		</Reference>
+	</ItemGroup>
+
+</Project>

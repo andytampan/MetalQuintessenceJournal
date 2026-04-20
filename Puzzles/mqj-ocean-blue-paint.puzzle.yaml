@@ -1,0 +1,149 @@
+Name: Ocean-Blue Paint
+ID: mqj-ocean-blue-paint
+Author: 'Citrius, L'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: lead
+      Position:
+        Pos: -1,0
+    - AtomType: tin
+      Position:
+        Pos: 0,0
+    - AtomType: iron
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Metallic minus
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: copper
+      Position:
+        Pos: -1,0
+    - AtomType: iron
+      Position:
+        Pos: 0,0
+    - AtomType: silver
+      Position:
+        Pos: 1,0
+    - AtomType: water
+      Position:
+        Pos: 0,1
+    - AtomType: water
+      Position:
+        Pos: 0,-1
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    Name: Invariant Solution
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: quicksilver
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Quicksilver
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: lead
+      Position:
+        Pos: -1,0
+    - AtomType: lead
+      Position:
+        Pos: 0,0
+    - AtomType: lead
+      Position:
+        Pos: 2,-1
+    - AtomType: water
+      Position:
+        Pos: 1,-1
+    - AtomType: MetalQuintessence:chromium
+      Position:
+        Pos: 1,0
+    - AtomType: water
+      Position:
+        Pos: 0,-1
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,-1
+      BondTypes:
+      - standard
+    Name: Ocean-Blue Paint
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: Projection, CoreTools
+CustomPermissions:
+- MetalQuintessence:Pigmentation
+- ReductiveMetallurgy:rejection
+Highlights: []
+ProductionInfo: 
